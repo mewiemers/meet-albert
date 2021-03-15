@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "AlmondCream";
+  src: local("AlmondCream"), url(../public/AlmondCream.woff) format("woff");
+}
+
 html,
 body {
   padding: 0;
