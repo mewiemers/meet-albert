@@ -3,6 +3,16 @@
   src: local("AlmondCream"), url(../public/AlmondCream.woff) format("woff");
 }
 
+:root {
+  --mainbackground-color: #50c4b7;
+  --secondary-color: #fff;
+  --link-color: #674b14;
+  --font-color: #000;
+  --quizbutton-color: #2537c7;
+  --quizbutton-false-color: #f80606;
+  --quizbutton-true-color: #699716;
+}
+
 html,
 body {
   padding: 0;
