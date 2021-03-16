@@ -7,7 +7,7 @@ function Logo() {
   return (
     <div className={styles.background}>
       <h1 className={styles.headline}>Meet</h1>
-      <Link href="#">
+      <Link href="/">
         <a>
           <img src="/logo-albert.svg" />
         </a>
