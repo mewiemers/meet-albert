@@ -3,6 +3,11 @@
   src: local("AlmondCream"), url(../public/AlmondCream.woff) format("woff");
 }
 
+@font-face {
+  font-family: "Gabriola";
+  src: local("Gabriola"), url(../public/Gabriola.woff) format("woff");
+}
+
 :root {
   --mainbackground-color: #50c4b7;
   --secondary-color: #fff;
@@ -18,7 +23,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 a {
