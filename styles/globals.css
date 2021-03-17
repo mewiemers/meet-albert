@@ -1,6 +1,6 @@
 @font-face {
   font-family: "AlmondCream";
-  src: local("AlmondCream"), url(../public/AlmondCream.woff) format("woff");
+  src: url(/AlmondCream.woff) format("woff");
 }
 
 html,
