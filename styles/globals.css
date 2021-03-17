@@ -3,12 +3,30 @@
   src: url(/AlmondCream.woff) format("woff");
 }
 
+@font-face {
+  font-family: "Gabriola";
+  src: url(/Gabriola.woff) format("woff");
+}
+@font-face {
+  font-family: "FranklinGothic";
+  src: url(/FranklinGothic.woff) format("woff");
+}
+
+:root {
+  --main-background-color: #50c4b7;
+  --secondary-color: #fff;
+  --link-color: #674b14;
+  --font-color: #000;
+  --quiz-button-color: #2537c7;
+  --quiz-button-false-color: #f80606;
+  --quiz-button-true-color: #699716;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 a {
