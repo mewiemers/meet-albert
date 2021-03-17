@@ -10,7 +10,4 @@ export default {
 const Template: Story = (args) => <Welcome {...args} />;
 
 export const Primary = Template.bind({});
-Primary.args = {
-  primary: true,
-  label: "Welcome",
-};
+Primary.args = {};

@@ -4,10 +4,10 @@
   justify-items: center;
   height: 100vh;
   align-items: center;
-  grid-auto-rows: min-content;
 }
 .headline {
   font-family: "AlmondCream", sans-serif;
   color: #707070;
-  font-size: 60px;
+  font-size: 3.75rem;
+  text-align: center;
 }
