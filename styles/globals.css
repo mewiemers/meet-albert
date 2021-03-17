@@ -9,7 +9,7 @@
 }
 @font-face {
   font-family: "FranklinGothic";
-  src: url(/public/FranklinGothic.woff) format("woff");
+  src: url(/FranklinGothic.woff) format("woff");
 }
 
 :root {
