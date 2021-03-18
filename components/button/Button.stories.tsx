@@ -18,3 +18,8 @@ export const Discover = Template.bind({});
 Discover.args = {
   label: "Discover",
 };
+
+export const YesButton = Template.bind({});
+YesButton.args = {
+  label: "YES!",
+};
