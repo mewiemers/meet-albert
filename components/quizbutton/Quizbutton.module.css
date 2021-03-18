@@ -1,0 +1,33 @@
+.blue {
+  border-radius: 20px;
+  font-size: 1.25rem;
+  background-color: var(--quiz-button-color);
+  border: none;
+  font-family: "Gabriola", sans-serif;
+  width: 16rem;
+  height: 4.5rem;
+  box-shadow: 0.01px 7px 16px -2px rgba(0, 0, 0, 0.69),
+    0.01px 7px 16px -2px rgba(0, 0, 0, 0.69);
+}
+.red {
+  border-radius: 20px;
+  font-size: 1.25rem;
+  background-color: var(--quiz-button-false-color);
+  border: none;
+  font-family: "Gabriola", sans-serif;
+  width: 16rem;
+  height: 4.5rem;
+  box-shadow: 0.01px 7px 16px -2px rgba(0, 0, 0, 0.69),
+    0.01px 7px 16px -2px rgba(0, 0, 0, 0.69);
+}
+.green {
+  border-radius: 20px;
+  font-size: 1.25rem;
+  background-color: var(--quiz-button-true-color);
+  border: none;
+  font-family: "Gabriola", sans-serif;
+  width: 16rem;
+  height: 4.5rem;
+  box-shadow: 0.01px 7px 16px -2px rgba(0, 0, 0, 0.69),
+    0.01px 7px 16px -2px rgba(0, 0, 0, 0.69);
+}
