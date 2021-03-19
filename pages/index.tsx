@@ -1,22 +1,20 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import Card from "../components/card/Card";
+import Logo from "../components/welcome/Welcome";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Meet Albert</title>
+        <link rel="icon" href="/" />
       </Head>
 
-      <main className={styles.main}>
-        <div>
-          <Card primary label="Primary" />
-        </div>
+      <main>
+        <Logo></Logo>
+        <div></div>
       </main>
 
-      <footer className={styles.footer}>Powered by Melanie</footer>
+      <footer></footer>
     </div>
   );
 }
