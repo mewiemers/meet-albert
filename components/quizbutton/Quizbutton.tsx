@@ -11,7 +11,7 @@ export default function QuizButton({
   ...props
 }: QuizButtonProps) {
   return (
-    <button className={styles[color]} {...props}>
+    <button className={`${styles.standard} ${styles[color]}`} {...props}>
       {label}
     </button>
   );

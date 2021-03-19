@@ -11,18 +11,18 @@ const Template: Story<QuizButtonProps> = (args) => <QuizButton {...args} />;
 
 export const AnswerButton = Template.bind({});
 AnswerButton.args = {
-  label: "",
+  label: "Answer",
   color: "blue",
 };
 
 export const RightButton = Template.bind({});
 RightButton.args = {
-  label: "",
+  label: "Right",
   color: "green",
 };
 
 export const WrongButton = Template.bind({});
 WrongButton.args = {
-  label: "",
+  label: "Wrong",
   color: "red",
 };
