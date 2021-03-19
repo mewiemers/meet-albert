@@ -2,7 +2,8 @@
   border-radius: 20px;
   font-size: 4rem;
   text-align: center;
-  width: 16rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   background-color: var(--quiz-button-color);
   border: none;
   font-family: "Gabriola", sans-serif;
