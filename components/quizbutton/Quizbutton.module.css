@@ -1,0 +1,19 @@
+.standard {
+  border-radius: 20px;
+  font-size: 4rem;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: var(--quiz-button-color);
+  border: none;
+  font-family: "Gabriola", sans-serif;
+  box-shadow: 0.01px 7px 16px -2px rgba(0, 0, 0, 0.69),
+    0.01px 7px 16px -2px rgba(0, 0, 0, 0.69);
+}
+
+.red {
+  background-color: var(--quiz-button-false-color);
+}
+.green {
+  background-color: var(--quiz-button-true-color);
+}

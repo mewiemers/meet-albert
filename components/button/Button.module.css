@@ -1,0 +1,15 @@
+.btn {
+  border-radius: 20px;
+  font-size: 1.25rem;
+  background-color: var(--button-color);
+  border: none;
+  font-family: "Gabriola", sans-serif;
+  width: 7rem;
+  height: 2rem;
+  box-shadow: 0.01px 7px 16px -2px rgba(0, 0, 0, 0.69),
+    0.01px 7px 16px -2px rgba(0, 0, 0, 0.69);
+}
+.primary {
+  width: 4.5rem;
+  height: 2.5rem;
+}
