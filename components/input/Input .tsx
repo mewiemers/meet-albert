@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styles from "./Input.module.css";
 
-const [name, setName] = useState("");
-
 export default function Input() {
+  const [name, setName] = useState("");
+
   return (
     <>
       <input
