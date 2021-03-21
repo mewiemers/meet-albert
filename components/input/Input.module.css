@@ -1,0 +1,10 @@
+.input {
+  background-color: #9dec5b;
+  border-radius: 2em;
+  height: 2rem;
+  width: 10rem;
+  border: none;
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: "Gabriola", sans-serif;
+}
