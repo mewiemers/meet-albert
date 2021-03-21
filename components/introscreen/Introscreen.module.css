@@ -1,0 +1,28 @@
+.background {
+  background: #50c4b7;
+}
+
+.headline {
+  font-family: "AlmondCream", sans-serif;
+  color: #707070;
+  font-size: 3.75rem;
+  text-align: center;
+}
+
+.box {
+  font-size: 2em;
+  font-family: "Franklin Gothic", sans-serif;
+  border: #707070 solid 6px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 2.5rem;
+  margin-bottom: 4rem;
+  padding-bottom: 5rem;
+  padding-right: 10rem;
+  padding-left: 10rem;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}
