@@ -1,7 +1,7 @@
 import styles from "./Button.module.css";
 
 export type ButtonProps = {
-  primary: boolean;
+  primary?: boolean;
   label: string;
 };
 
