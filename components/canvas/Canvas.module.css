@@ -1,0 +1,13 @@
+.containermap {
+  background-image: url(/Albert.svg);
+  background-repeat: no-repeat;
+  align-content: center;
+}
+
+.show {
+  display: none;
+}
+
+.backgroundcanvas {
+  background-image: url(/australia-map.jpg);
+}
