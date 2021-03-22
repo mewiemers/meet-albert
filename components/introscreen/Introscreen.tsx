@@ -16,10 +16,7 @@ function Introscreen() {
             Playing is very easy, just use your arrow keys or tap on the blue
             Points to navigate Albert through the cities.
           </p>
-          <p>
-            Playing is very easy, just use your arrow keys or tap on the blue
-            Points to navigate Albert through the cities.
-          </p>
+
           <p> So lets meet Albert and discover the continent.</p>
           <Button label="Traveling" />
         </div>
