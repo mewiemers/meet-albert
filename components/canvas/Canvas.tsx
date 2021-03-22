@@ -1,22 +1,26 @@
 import React from "react";
 import styles from "./Canvas.module.css";
-
-// let canvas=document.getElementById("canvas")
-// let ctx=canvas.getContext("2d")
+import { useEffect, useRef } from "react";
 
 function Canvas() {
+  const canvasRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = canvasRef.current.getContext("2d");
+    const image = new Image();
+    image.src = "/Albert.svg";
+    image.onload = () => {
+      ctx.drawImage(image, 0, 0);
+    };
+  }, []);
+
   return (
-    <>
-      <div className={styles.containermap}>
-        <img src="/Albert.svg" />
-        <canvas
-          className={styles.backgroundcanvas}
-          width="1920"
-          height="1400"
-        ></canvas>
-      </div>
-    </>
+    <canvas
+      className={styles.backgroundcanvas}
+      ref={canvasRef}
+      width="1920"
+      height="1400"
+    />
   );
 }
-
 export default Canvas;
