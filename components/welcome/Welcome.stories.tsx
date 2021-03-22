@@ -3,7 +3,7 @@ import { Story, Meta } from "@storybook/react/types-6-0";
 import Welcome from "./Welcome";
 
 export default {
-  title: "Common/Welcome",
+  title: "Pages/Welcome",
   component: Welcome,
 } as Meta;
 
