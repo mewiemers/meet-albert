@@ -6,17 +6,17 @@ function Canvas() {
   const canvasRef = useRef(null);
 
   useEffect(() => {
-    const ctx = canvasRef.current.getContext("2d");
+    const context = canvasRef.current.getContext("2d");
     const image = new Image();
     image.src = "/Albert.svg";
     image.onload = () => {
-      ctx.drawImage(image, 0, 0);
+      context.drawImage(image, 0, 0);
     };
   }, []);
 
   return (
     <canvas
-      className={styles.backgroundcanvas}
+      className={styles.backgroundCanvas}
       ref={canvasRef}
       width="1920"
       height="1400"
