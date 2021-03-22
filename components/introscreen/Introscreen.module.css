@@ -17,9 +17,7 @@
   text-align: center;
   line-height: 2.5rem;
   margin-bottom: 4rem;
-  padding-bottom: 5rem;
-  padding-right: 10rem;
-  padding-left: 10rem;
+  padding: 0.01rem 10rem 5rem 10rem;
 }
 
 .img {
