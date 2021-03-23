@@ -9,7 +9,7 @@
     "start": "NODE_ENV=production node build/index.js",
     "stylecheck": "stylelint \"**/*.css\"",
     "prettycheck": "prettier --check .",
-    "format": "prettier --write",
+    "format": "prettier --write .",
     "prepare": "husky install",
     "typecheck": "tsc",
     "test": "npm run lint && npm run stylecheck && npm run prettycheck && npm run typecheck",
