@@ -7,11 +7,7 @@ function Canvas() {
 
   useEffect(() => {
     const context = canvasRef.current.getContext("2d");
-    const image = new Image();
-    image.src = "/Albert.svg";
-    image.onload = () => {
-      context.drawImage(image, 0, 0);
-    };
+    moveAlbert(context);
   }, []);
 
   return (
@@ -24,3 +20,26 @@ function Canvas() {
   );
 }
 export default Canvas;
+
+const albert = { x: 1360, y: 250, width: 50, height: 10 };
+
+function moveAlbert(context) {
+  const image = new Image();
+  image.src = "/Albert.svg";
+  image.onload = () => {
+    context.drawImage(image, albert.x, albert.y);
+  };
+  context.clearRect(0, 0, albert.width, albert.height);
+  if (albert.x == albert.y) {
+    albert.y += 10;
+  } else if (albert.x === albert.y) {
+    albert.y -= 10;
+  } else if (albert.y === albert.x) {
+    albert.x += 10;
+  }
+  // this moves Albert over map but dont stop him
+  // albert.x += 0.3;
+  // albert.y += 2;
+  context.clearRect(0, 0, albert.width, albert.height);
+  requestAnimationFrame(() => moveAlbert(context));
+}
