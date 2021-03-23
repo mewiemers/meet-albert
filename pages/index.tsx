@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Meet Albert</title>
         <link rel="icon" href="/" />
@@ -13,10 +13,10 @@ export default function Home() {
       <main>
         <Link href={`/traveling/`}>
           <a>
-            <Logo></Logo>
+            <Logo />
           </a>
         </Link>
       </main>
-    </div>
+    </>
   );
 }

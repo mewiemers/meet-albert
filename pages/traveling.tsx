@@ -3,9 +3,9 @@ import Introscreen from "../components/introscreen/Introscreen";
 
 function Traveling() {
   return (
-    <div>
-      <Introscreen></Introscreen>
-    </div>
+    <>
+      <Introscreen />
+    </>
   );
 }
 
