@@ -39,6 +39,10 @@ export async function infoList(collectionName) {
   return await db.collection(collectionName).find().toArray();
 }
 
+export async function quizanswers(collectionName) {
+  return await db.collection(collectionName).find().toArray();
+}
+
 export function closeDB() {
   client.close();
 }
