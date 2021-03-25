@@ -1,0 +1,13 @@
+.background {
+  background: var(--main-background-color);
+  display: grid;
+  justify-items: center;
+  height: 100vh;
+  grid-template-rows: 20% 20%;
+}
+.headline {
+  font-family: "AlmondCream", sans-serif;
+  color: #707070;
+  font-size: 3.75rem;
+  text-align: center;
+}
