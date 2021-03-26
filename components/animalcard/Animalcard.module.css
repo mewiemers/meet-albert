@@ -1,11 +1,29 @@
-.card {
-  background-color: white;
-  border: 1px solid #bacdd8;
-  padding: 8px;
-  border-radius: 12px;
+.background {
+  background-color: var(--main-background-color);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
-.img {
-  border-radius: 12px;
-  height: 214px;
-  object-fit: cover;
+
+.headline {
+  font-family: "AlmondCream", sans-serif;
+  color: #707070;
+  font-size: 3.75rem;
+  text-align: center;
+}
+.textbox {
+  border: #707070 solid 2px;
+  text-align: center;
+  width: 66%;
+  line-height: 3rem;
+  font-size: 1.3rem;
+  border-radius: 40px;
+}
+audio::-webkit-media-controls-play-button {
+  background-color: var(--link-color);
+}
+audio::-webkit-media-controls-panel {
+  background-color: var(--link-color);
 }

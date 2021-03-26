@@ -1,19 +1,13 @@
 import styles from "./Animalcard.module.css";
 import { Animal } from "../../utils/type";
 
-export type AnimalProps = {
-  animals: Animal;
-};
-
-function AnimalCard({ animals }: AnimalProps) {
+function AnimalCard({ name, ImgSrc, description, audioFile }: Animal) {
   return (
-    <div>
-      <h1></h1>
-      <div>
-        <img src={animals.ImgSrc} />
-        <p></p>
-      </div>
-      <audio controls src={animals.audioFile}>
+    <div className={styles.background}>
+      <h1 className={styles.headline}>{name}</h1>
+      <img src={ImgSrc} />
+      <p className={styles.textbox}>{description}</p>
+      <audio controls src={audioFile}>
         Your browser does not support the
         <code>audio</code> element.
       </audio>
