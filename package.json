@@ -39,6 +39,7 @@
     "eslint-plugin-react": "^7.22.0",
     "husky": "^5.1.3",
     "lint-staged": "^10.5.4",
+    "mongodb": "^3.6.5",
     "nodemon": "^2.0.7",
     "prettier": "^2.2.1",
     "storybook-css-modules-preset": "^1.0.6",
