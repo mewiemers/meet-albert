@@ -10,10 +10,40 @@
 
 .backgroundCanvas {
   background-image: url(/australia-map.jpg);
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
 }
 .input {
   z-index: 2;
   top: 764px;
   left: 1614px;
   position: absolute;
+}
+.btnup {
+  z-index: 3;
+  top: 100px;
+  left: 100px;
+  position: absolute;
+}
+.btnright {
+  z-index: 3;
+  top: 200px;
+  left: 100px;
+  position: absolute;
+}
+.btnleft {
+  z-index: 3;
+  top: 300px;
+  left: 100px;
+  position: absolute;
+}
+.btndown {
+  z-index: 3;
+  top: 400px;
+  left: 100px;
+  position: absolute;
+}
+.img {
+  display: none;
 }
