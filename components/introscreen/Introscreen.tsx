@@ -17,7 +17,7 @@ function Introscreen() {
         </p>
 
         <p> So lets meet Albert and discover the continent.</p>
-        <Button label="Traveling" />
+        <Button label="Traveling" link={"/login"} />
       </div>
 
       <img className={styles.img} src="/australia-map.jpg" />

@@ -8,7 +8,7 @@ function Logo() {
     <div className={styles.background}>
       <h1 className={styles.headline}>Meet Albert</h1>
       <Input />
-      <Button label="Discover" />
+      <Button label="Discover" link={"/login"} />
     </div>
   );
 }

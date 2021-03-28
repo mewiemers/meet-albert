@@ -12,14 +12,17 @@ const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 export const Traveling = Template.bind({});
 Traveling.args = {
   label: "Traveling",
+  link: "",
 };
 
 export const Discover = Template.bind({});
 Discover.args = {
   label: "Discover",
+  link: "",
 };
 
 export const YesButton = Template.bind({});
 YesButton.args = {
   label: "YES!",
+  link: "",
 };
