@@ -1,0 +1,29 @@
+.background {
+  background-color: var(--main-background-color);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.headline {
+  font-family: "AlmondCream", sans-serif;
+  color: #707070;
+  font-size: 3.75rem;
+  text-align: center;
+}
+.textbox {
+  border: #707070 solid 2px;
+  text-align: center;
+  width: 66%;
+  line-height: 3rem;
+  font-size: 1.3rem;
+  border-radius: 40px;
+}
+audio::-webkit-media-controls-play-button {
+  background-color: var(--link-color);
+}
+audio::-webkit-media-controls-panel {
+  background-color: var(--link-color);
+}
