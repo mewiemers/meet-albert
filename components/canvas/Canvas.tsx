@@ -31,12 +31,9 @@ function Canvas() {
 
   return (
     <>
-      <canvas
-        className={styles.backgroundCanvas}
-        ref={canvasRef}
-        width="1920"
-        height="1400"
-      />
+      <input className={styles.input} type="button" value="test" />
+      <canvas className={styles.backgroundCanvas} ref={canvasRef} z-index="1" />
+
       <div>
         <button onClick={() => move("up")}>Up</button>
         <button onClick={() => move("left")}>Left</button>

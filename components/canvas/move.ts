@@ -6,6 +6,12 @@ export default function moveAlbert() {
   const [isdirection, setIsDirection] = useState("down");
 
   useEffect(() => {
+    if (x >= 1590 && x <= 1610 && y >= 640 && y <= 680) {
+      location.href = "/";
+    }
+  }, [x, y]);
+
+  useEffect(() => {
     window.addEventListener("key", handleKey);
 
     function handleKey(e) {
