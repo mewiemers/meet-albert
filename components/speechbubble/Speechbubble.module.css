@@ -1,0 +1,23 @@
+.bubble {
+  width: 22rem;
+  height: 15rem;
+  background-color: rgb(10, 214, 61);
+  border-radius: 2rem;
+  position: relative;
+  text-align: center;
+}
+.bubble::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  transform: translate(-100%, -50%);
+  border-top: 1.5rem solid transparent;
+  border-bottom: 1.5rem solid transparent;
+  border-right: 2.5rem solid rgb(10, 214, 61);
+}
+.text {
+  padding: 2rem;
+}
