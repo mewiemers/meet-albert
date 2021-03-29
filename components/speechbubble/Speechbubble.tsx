@@ -5,8 +5,8 @@ export default function Speechbubble() {
     <>
       <div className={styles.bubble}>
         <p className={styles.text}>
-          Hello (Name)! Nice to meet you! I am Albert and i love to travel!
-          Would you come along with me through Australia?
+          Hello (Name)! Nice to meet you! I am Albert and I love to travel!
+          Would you like to come along with me through Australia?
         </p>
       </div>
     </>
