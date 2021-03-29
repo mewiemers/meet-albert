@@ -24,10 +24,10 @@ export default function moveAlbert() {
   }, []);
   function move(direction) {
     setIsDirection(direction);
-    if (direction === "up") setY((y) => y - 10);
-    if (direction === "left") setX((x) => x - 10);
-    if (direction === "right") setX((x) => x + 10);
-    if (direction === "down") setY((y) => y + 10);
+    if (direction === "up") setY((y) => y - 20);
+    if (direction === "left") setX((x) => x - 20);
+    if (direction === "right") setX((x) => x + 20);
+    if (direction === "down") setY((y) => y + 20);
   }
   return { x, y, isdirection, move };
 }

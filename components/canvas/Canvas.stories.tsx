@@ -5,6 +5,9 @@ import Canvas from "./Canvas";
 export default {
   title: "Common/Canvas",
   component: Canvas,
+  parameters: {
+    layout: "fullscreen",
+  },
 } as Meta;
 
 const Template: Story = (args) => <Canvas {...args} />;
