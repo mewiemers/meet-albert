@@ -11,3 +11,9 @@
 .backgroundCanvas {
   background-image: url(/australia-map.jpg);
 }
+.input {
+  z-index: 2;
+  top: 764px;
+  left: 1614px;
+  position: absolute;
+}
