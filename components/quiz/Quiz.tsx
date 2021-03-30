@@ -13,19 +13,18 @@ import Quizbutton from "../quizbutton/Quizbutton";
 // };
 
 function Quiz({ question, answerOptions }: QuizProps) {
-  const option = answerOptions.map((answer, index) => (
-    <div key={index}>
-      <div>{answer.answerText}</div>
-      <div>{answer.isCorrect}</div>
-    </div>
-  ));
+  const option = answerOptions.map((answer) => {
+    return (
+      <>
+        <Quizbutton color="blue" label={answer.answerText} />
+        <Quizbutton color="red" label={answer.isCorrect} />
+      </>
+    );
+  });
 
   return (
     <div className={styles.App}>
       <h1>{question}</h1>
-      <Quizbutton color="blue" label="blue bird" />
-      <Quizbutton color="blue" label="kookaburra" />
-      <Quizbutton color="blue" label="emu" />
       <div>{option}</div>
     </div>
   );

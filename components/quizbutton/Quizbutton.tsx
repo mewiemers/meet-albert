@@ -1,7 +1,7 @@
 import styles from "./Quizbutton.module.css";
 
 export type QuizButtonProps = {
-  label?: string;
+  label?: string | boolean;
   color?: "blue" | "red" | "green";
 };
 
