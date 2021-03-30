@@ -1,8 +1,8 @@
 import styles from "./Quizbutton.module.css";
 
 export type QuizButtonProps = {
-  label: string;
-  color: "blue" | "red" | "green";
+  label?: string;
+  color?: "blue" | "red" | "green";
 };
 
 export default function QuizButton({
