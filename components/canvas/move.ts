@@ -7,7 +7,7 @@ export default function moveAlbert() {
 
   useEffect(() => {
     if (x >= 1590 && x <= 1610 && y >= 640 && y <= 680) {
-      location.href = "/";
+      location.href = "/citypage";
     }
   }, [x, y]);
 
