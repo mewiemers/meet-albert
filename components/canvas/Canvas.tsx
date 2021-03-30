@@ -30,46 +30,30 @@ function Canvas() {
   }, [x, y]);
 
   return (
-    <>
-      <input className={styles.input} type="button" value="test" />
-      <canvas className={styles.backgroundCanvas} ref={canvasRef} z-index="1" />
+    <div className={styles.containerMap}>
+      <main className={styles.main}>
+        <input className={styles.input} type="button" value="test" />
 
-      <div>
-        <button className={styles.btnup} onClick={() => move("up")}>
-          Up
-        </button>
-        <button className={styles.btnleft} onClick={() => move("left")}>
-          Left
-        </button>
-        <button className={styles.btndown} onClick={() => move("down")}>
-          Down
-        </button>
-        <button className={styles.btnright} onClick={() => move("right")}>
-          Right
-        </button>
-      </div>
-      <div>
-        <img src="/up.svg" className={styles.img} ref={albertUpRef} alt="up" />
-        <img
-          src="/left.svg"
-          className={styles.img}
-          ref={albertLeftRef}
-          alt="left"
+        <canvas
+          className={styles.backgroundCanvas}
+          ref={canvasRef}
+          z-index="1"
         />
-        <img
-          src="/right.svg"
-          className={styles.img}
-          ref={albertRightRef}
-          alt="right"
-        />
-        <img
-          src="/Albert.svg"
-          className={styles.img}
-          ref={albertDownRef}
-          alt="down"
-        />
-      </div>
-    </>
+
+        <div className={styles.btn}>
+          <button onClick={() => move("up")}>Up</button>
+          <button onClick={() => move("left")}>Left</button>
+          <button onClick={() => move("down")}>Down</button>
+          <button onClick={() => move("right")}>Right</button>
+        </div>
+        <div className={styles.img}>
+          <img src="/up.svg" ref={albertUpRef} alt="up" />
+          <img src="/left.svg" ref={albertLeftRef} alt="left" />
+          <img src="/right.svg" ref={albertRightRef} alt="right" />
+          <img src="/Albert.svg" ref={albertDownRef} alt="down" />
+        </div>
+      </main>
+    </div>
   );
 }
 export default Canvas;
