@@ -1,1 +1,5 @@
-GET http://localhost:3000/api/animalsinfo
+# GET http://localhost:3000/api/animalsinfo
+
+
+
+GET http://localhost:3000/api/quizanswers

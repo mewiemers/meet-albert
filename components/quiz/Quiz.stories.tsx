@@ -4,7 +4,7 @@ import Quiz from "./Quiz";
 import { QuizProps } from "../../utils/type";
 
 export default {
-  title: "Common/Quiz",
+  title: "Pages/Quiz",
   component: Quiz,
 } as Meta;
 

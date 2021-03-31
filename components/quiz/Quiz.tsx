@@ -1,6 +1,15 @@
-import { QuizProps } from "../../utils/type";
 import styles from "./Quiz.module.css";
 import Quizbutton from "../quizbutton/Quizbutton";
+
+export type QuizProps = {
+  _id: string;
+  question: string;
+  answerOptions: Answer[];
+};
+export type Answer = {
+  answerText: string;
+  isCorrect: boolean;
+};
 
 function Quiz({ question, answerOptions }: QuizProps) {
   const option = answerOptions.map((answer) => {
