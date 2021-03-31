@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Head>
         <title>Meet Albert</title>
-        <link rel="icon" href="/" />
+        <link rel="icon" href="/albert-hey.ico" />
       </Head>
 
       <main>
