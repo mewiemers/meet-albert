@@ -1,18 +1,14 @@
 .containerMap {
-  background-image: url(/Albert.svg);
-  background-repeat: no-repeat;
-  align-content: center;
+  box-sizing: border-box;
 }
-
-.show {
-  display: none;
+.main {
+  position: relative;
+  height: 100vh;
 }
 
 .backgroundCanvas {
   background-image: url(/australia-map.jpg);
   background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
 }
 .input {
   z-index: 2;
@@ -20,30 +16,50 @@
   left: 1614px;
   position: absolute;
 }
-.btnup {
-  z-index: 3;
-  top: 100px;
-  left: 100px;
+.btn {
+  display: grid;
+  grid-template: auto auto / auto auto auto;
+  grid-template-areas:
+    ". up ."
+    "left down right";
+  grid-gap: 8px;
   position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
-.btnright {
-  z-index: 3;
-  top: 200px;
-  left: 100px;
-  position: absolute;
+.btn button {
+  cursor: pointer;
+  font-size: 16px;
+  width: 60px;
+  height: 40px;
+  background: var(--main-background-color);
+  color: var(--button-color);
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s ease all;
 }
-.btnleft {
-  z-index: 3;
-  top: 300px;
-  left: 100px;
-  position: absolute;
+.btn button:hover {
+  background: var(--main-background-color);
+  color: #fff;
 }
-.btndown {
-  z-index: 3;
-  top: 400px;
-  left: 100px;
-  position: absolute;
+
+.btn button:first-child {
+  grid-area: up;
 }
+
+.btn button:nth-child(2) {
+  grid-area: left;
+}
+
+.btn button:nth-child(3) {
+  grid-area: down;
+}
+
+.btn button:last-child {
+  grid-area: right;
+}
+
 .img {
   display: none;
 }
