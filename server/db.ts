@@ -1,7 +1,7 @@
 import { MongoClient } from "mongodb";
 import type { NextApiRequest, NextApiResponse } from "next";
 
-export type AnimalDoc = {
+export type Animal = {
   name: string;
   id: string;
   ImgSrc: string;

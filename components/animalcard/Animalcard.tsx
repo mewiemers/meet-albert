@@ -1,7 +1,7 @@
 import styles from "./Animalcard.module.css";
 
 export type AnimalCardProps = {
-  _id: string;
+  _id?: string;
   name: string;
   ImgSrc: string;
   description: string;

@@ -21,9 +21,3 @@
   font-size: 1.3rem;
   border-radius: 40px;
 }
-audio::-webkit-media-controls-play-button {
-  background-color: var(--link-color);
-}
-audio::-webkit-media-controls-panel {
-  background-color: var(--link-color);
-}
