@@ -2,4 +2,18 @@
   text-align: center;
   font-family: "Gabriola", sans-serif;
   display: grid;
+  grid-template-columns: 1fr;
+  background: var(--main-background-color);
+  color: var(--secondary-font-color);
+}
+
+.headline {
+  font-family: "Almond Cream", sans-serif;
+  font-size: 3em;
+}
+.btn {
+  display: grid;
+  grid-row-gap: 2em;
+  width: 50vw;
+  justify-self: center;
 }
