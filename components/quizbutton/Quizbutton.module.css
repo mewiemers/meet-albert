@@ -4,6 +4,7 @@
   text-align: center;
   padding-left: 2rem;
   padding-right: 2rem;
+  color: var(--secondary-color);
   background-color: var(--quiz-button-color);
   border: none;
   font-family: "Gabriola", sans-serif;
