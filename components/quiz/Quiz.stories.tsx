@@ -1,7 +1,7 @@
 // import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
 import Quiz from "./Quiz";
-import { QuizProps } from "../../utils/type";
+import { QuizProps } from "./Quiz";
 
 export default {
   title: "Pages/Quiz",
