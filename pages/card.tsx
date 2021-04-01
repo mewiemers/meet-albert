@@ -12,7 +12,7 @@ function Card() {
   }, []);
 
   if (!animalInfo) {
-    return <div>is noch nicht so weit..bitte warten...</div>;
+    return <div>kookie is flying to you....</div>;
   }
   const infocard = animalInfo.map(
     ({ _id, ImgSrc, audioFile, description, name }: Animal) => (
