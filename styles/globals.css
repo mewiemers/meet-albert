@@ -31,6 +31,13 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+audio::-webkit-media-controls-play-button {
+  background-color: var(--link-color);
+}
+audio::-webkit-media-controls-panel {
+  background-color: var(--link-color);
+}
+
 a {
   color: inherit;
   text-decoration: none;

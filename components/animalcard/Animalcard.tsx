@@ -1,14 +1,12 @@
+import { Animal } from "../../utils/api";
 import styles from "./Animalcard.module.css";
 
-export type AnimalCardProps = {
-  _id: string;
-  name: string;
-  ImgSrc: string;
-  description: string;
-  audioFile: string;
-};
+export type AnimalPreview = Pick<
+  Animal,
+  "name" | "ImgSrc" | "audioFile" | "description"
+>;
 
-function AnimalCard({ name, ImgSrc, description, audioFile }: AnimalCardProps) {
+function AnimalCard({ name, ImgSrc, description, audioFile }: AnimalPreview) {
   return (
     <div className={styles.background}>
       <h1 className={styles.headline}>{name}</h1>
