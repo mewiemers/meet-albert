@@ -1,13 +1,13 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
-import AnimalCard, { AnimalCardProps } from "./Animalcard";
+import AnimalCard, { AnimalPreview } from "./Animalcard";
 
 export default {
   title: "Common/AnimalCard",
   component: AnimalCard,
 } as Meta;
 
-const Template: Story<AnimalCardProps> = (args) => <AnimalCard {...args} />;
+const Template: Story<AnimalPreview> = (args) => <AnimalCard {...args} />;
 
 export const Animali = Template.bind({});
 Animali.args = {

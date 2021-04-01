@@ -14,15 +14,17 @@ function Card() {
   if (!animalInfo) {
     return <div>is noch nicht so weit..bitte warten...</div>;
   }
-  const infocard = animalInfo.map((info) => (
-    <AnimalCard
-      key={info._id}
-      ImgSrc={info.ImgSrc}
-      audioFile={info.audioFile}
-      description={info.description}
-      name={info.name}
-    />
-  ));
+  const infocard = animalInfo.map(
+    ({ _id, ImgSrc, audioFile, description, name }: Animal) => (
+      <AnimalCard
+        key={_id}
+        ImgSrc={ImgSrc}
+        audioFile={audioFile}
+        description={description}
+        name={name}
+      />
+    )
+  );
 
   return <div>{infocard}</div>;
 }
