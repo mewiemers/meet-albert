@@ -7,7 +7,7 @@ function Questions() {
   useEffect(() => {
     fetch("/api/quizanswers")
       .then((response) => response.json())
-      .then((response) => setChoice(response[0]));
+      .then((quizAnswers) => setChoice(quizAnswers[0]));
   }, []);
 
   if (!choice) {
@@ -15,9 +15,7 @@ function Questions() {
   }
 
   return (
-    <>
-      <Quiz answerOptions={choice.answerOptions} question={choice.question} />
-    </>
+    <Quiz answerOptions={choice.answerOptions} question={choice.question} />
   );
 }
 

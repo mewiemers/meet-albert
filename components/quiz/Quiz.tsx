@@ -12,25 +12,25 @@ export type Answer = {
   isCorrect: boolean;
 };
 
+export type AnswerStatus = "pending" | "wrong" | "correct";
+
 function Quiz({ question, answerOptions }: QuizProps) {
-  const handleAnswerClick = (isCorrect: boolean) => {
-    if (isCorrect === true) {
-      alert("AMAZING"), setColorchange("green");
+  const [guessStatus, setGuessStatus] = useState("");
+  const handleAnswerClick = (answerstatus: AnswerStatus) => {
+    if (answerstatus === "correct") {
+      setGuessStatus("AMAZING");
     } else {
-      alert("Hmm, try again!"), setColorchange("red");
+      setGuessStatus("Hmmm,try again");
     }
   };
-  const [colorchange, setColorchange] = useState("blue");
 
   const option = answerOptions.map((answer) => {
     return (
       <>
         <Quizbutton
-          color={colorchange}
+          color={answer.isCorrect ? "correct" : "wrong"}
           label={answer.answerText}
-          onClick={() => {
-            handleAnswerClick(answer.isCorrect);
-          }}
+          test={() => handleAnswerClick}
         />
       </>
     );
@@ -41,6 +41,8 @@ function Quiz({ question, answerOptions }: QuizProps) {
       <h1 className={styles.headline}>QUIZ TIME</h1>
       <h2>{question}</h2>
       <div className={styles.btn}>{option}</div>
+      <div>{guessStatus}</div>
+      <div>this will be used later, here for the arrow </div>
     </div>
   );
 }
