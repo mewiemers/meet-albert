@@ -1,8 +1,11 @@
+import { MouseEventHandler } from "react";
 import styles from "./Quizbutton.module.css";
 
 export type QuizButtonProps = {
   label?: string | boolean;
   color?: "blue" | "red" | "green";
+  isCorrect?: boolean;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
 };
 
 export default function QuizButton({
