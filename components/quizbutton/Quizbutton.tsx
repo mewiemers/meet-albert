@@ -3,7 +3,7 @@ import styles from "./Quizbutton.module.css";
 
 export type QuizButtonProps = {
   label?: string | boolean;
-  color?: "blue" | "red" | "green";
+  color?: "blue" | "red" | "green" | string;
   isCorrect?: boolean;
   onClick?: MouseEventHandler<HTMLButtonElement>;
 };

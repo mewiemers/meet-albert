@@ -1,5 +1,6 @@
 import styles from "./Quiz.module.css";
 import Quizbutton from "../quizbutton/Quizbutton";
+import { useState } from "react";
 
 export type QuizProps = {
   _id?: string;
@@ -12,19 +13,20 @@ export type Answer = {
 };
 
 function Quiz({ question, answerOptions }: QuizProps) {
-  const handleAnswerClick = (isCorrect) => {
+  const handleAnswerClick = (isCorrect: boolean) => {
     if (isCorrect === true) {
-      alert("AMAZING!");
+      alert("AMAZING"), setColorchange("green");
     } else {
-      alert("Hmm, try again!");
+      alert("Hmm, try again!"), setColorchange("red");
     }
   };
+  const [colorchange, setColorchange] = useState("blue");
 
   const option = answerOptions.map((answer) => {
     return (
       <>
         <Quizbutton
-          color="blue"
+          color={colorchange}
           label={answer.answerText}
           onClick={() => {
             handleAnswerClick(answer.isCorrect);
