@@ -1,4 +1,4 @@
-import { MouseEventHandler, useState } from "react";
+import { useState } from "react";
 import styles from "./Quizbutton.module.css";
 
 export type QuizButtonProps = {
@@ -7,7 +7,7 @@ export type QuizButtonProps = {
   color?: "pending" | "wrong" | "correct" | "standard";
   isCorrect?: boolean;
   //dont know which type is working here, any suggestion?
-  test?: MouseEventHandler<HTMLButtonElement>;
+  test?: any;
 };
 
 export default function QuizButton({
