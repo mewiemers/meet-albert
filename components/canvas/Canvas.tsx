@@ -29,10 +29,15 @@ function Canvas() {
     context.drawImage(albertRef.current, x, y);
   }, [x, y]);
 
+  const name = localStorage.getItem("name");
+
   return (
     <div className={styles.containerMap}>
       <main className={styles.main}>
-        <input className={styles.input} type="button" value="test" />
+        <p className={styles.text}>
+          Hello {name}! you can type on the button and navigate me to the blue
+          points or tap on Brisbane to start with the first city!
+        </p>
 
         <canvas
           className={styles.backgroundCanvas}
