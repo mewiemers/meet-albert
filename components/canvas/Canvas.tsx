@@ -1,6 +1,7 @@
 import styles from "./Canvas.module.css";
 import { useEffect, useRef } from "react";
 import moveAlbert from "../canvas/move";
+import useLocalStorage from "../../hook/hook";
 
 function Canvas() {
   const albertDownRef = useRef(null);
@@ -8,6 +9,15 @@ function Canvas() {
   const albertLeftRef = useRef(null);
   const albertRightRef = useRef(null);
   const { x, y, isdirection, move } = moveAlbert();
+  const [name, setName] = useLocalStorage<string>("name", null);
+
+  useEffect(() => {
+    if (!name) {
+      setName("friend");
+    } else {
+      return;
+    }
+  }, []);
 
   const canvasRef = useRef(null);
 
@@ -28,8 +38,6 @@ function Canvas() {
     if (isdirection === "down") albertRef = albertDownRef;
     context.drawImage(albertRef.current, x, y);
   }, [x, y]);
-
-  const name = localStorage.getItem("name");
 
   return (
     <div className={styles.containerMap}>
