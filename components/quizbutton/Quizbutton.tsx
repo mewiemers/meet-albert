@@ -1,17 +1,29 @@
+import { useState } from "react";
 import styles from "./Quizbutton.module.css";
 
 export type QuizButtonProps = {
-  label?: string | boolean;
-  color?: "blue" | "red" | "green";
+  label?: string;
+  status: "pending" | "wrong" | "correct" | "standard";
+  test?: (status: string) => void;
 };
 
 export default function QuizButton({
   label,
-  color,
+  status,
+  test,
   ...props
 }: QuizButtonProps) {
+  const [colorChange, setColorChange] = useState("pending");
+  function handleClick(status: string) {
+    setColorChange(status);
+    test(status);
+  }
   return (
-    <button className={`${styles.standard} ${styles[color]}`} {...props}>
+    <button
+      className={`${styles.standard} ${styles[colorChange]}`}
+      {...props}
+      onClick={() => handleClick(status)}
+    >
       {label}
     </button>
   );

@@ -5,16 +5,18 @@
   padding-left: 2rem;
   padding-right: 2rem;
   color: var(--secondary-color);
-  background-color: var(--quiz-button-color);
   border: none;
-  font-family: "Gabriola", sans-serif;
+  font-family: "AlmondCream", sans-serif;
   box-shadow: 0.01px 7px 16px -2px rgba(0, 0, 0, 0.69),
     0.01px 7px 16px -2px rgba(0, 0, 0, 0.69);
 }
 
-.red {
+.wrong {
   background-color: var(--quiz-button-false-color);
 }
-.green {
+.correct {
   background-color: var(--quiz-button-true-color);
+}
+.pending {
+  background-color: var(--quiz-button-color);
 }
