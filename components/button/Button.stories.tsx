@@ -23,6 +23,6 @@ Discover.args = {
 
 export const YesButton = Template.bind({});
 YesButton.args = {
-  label: "YES!",
+  label: "Brisbane",
   link: "",
 };

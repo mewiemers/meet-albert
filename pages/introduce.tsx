@@ -6,7 +6,6 @@ function Introduce() {
   return (
     <>
       <Button label="Brisbane" link={"/citypage/"} primary />
-
       <Canvas />
     </>
   );
