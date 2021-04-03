@@ -28,7 +28,7 @@ function Quiz({ question, answerOptions }: QuizProps) {
     return (
       <>
         <Quizbutton
-          color={answer.isCorrect ? "correct" : "wrong"}
+          status={answer.isCorrect ? "correct" : "wrong"}
           label={answer.answerText}
           test={() => handleAnswerClick}
         />
