@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
-import KookiePage from "../components/kookiepage/KookiePage";
+import Arrow from "../components/arrows/Arrows";
+import KookieDetail from "../components/kookiedetail/KookieDetail";
 
 function Kookie() {
   return (
@@ -11,7 +12,8 @@ function Kookie() {
       </Head>
 
       <main>
-        <KookiePage link={"/detail"} />
+        <KookieDetail />
+        <Arrow backgroundColor={"var(--font-color)"} link={"/card"} />
       </main>
     </>
   );

@@ -5,6 +5,8 @@
   grid-template-columns: 1fr;
   background: var(--main-background-color);
   color: var(--secondary-font-color);
+  width: 100vw;
+  height: 100vh;
 }
 
 .headline {
@@ -16,4 +18,7 @@
   grid-row-gap: 2em;
   width: 50vw;
   justify-self: center;
+}
+.map {
+  justify-self: flex-end;
 }

@@ -41,7 +41,7 @@ function Quiz({ question, answerOptions }: QuizProps) {
       <h2>{question}</h2>
       <div className={styles.btn}>{option}</div>
       <div>{guessStatus}</div>
-      <div>this will be used later, here for the arrow </div>
+      <img className={styles.map} src="/backtomap.svg" />
     </div>
   );
 }

@@ -1,13 +1,16 @@
 import React from "react";
-import { Meta } from "@storybook/react/types-6-0";
+import { Story, Meta } from "@storybook/react/types-6-0";
 import KookiePage from "./KookiePage";
+import { KookieProps } from "./KookiePage";
 
 export default {
   title: "Pages/KookiePage",
   component: KookiePage,
 } as Meta;
 
-const Template = () => <KookiePage />;
+const Template: Story<KookieProps> = (args) => <KookiePage {...args} />;
 
 export const Kookie = Template.bind({});
-// Primary.args = {};
+Kookie.args = {
+  link: "#",
+};
