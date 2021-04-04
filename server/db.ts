@@ -8,6 +8,17 @@ export type Animal = {
   description: string;
   audioFile: string;
 };
+export type Question = {
+  _id: string;
+  question: string;
+  answerOptions: AnswerOption[];
+  quizid: string;
+};
+
+export type AnswerOption = {
+  answerText: string;
+  isCorrect: boolean;
+};
 
 let client = null;
 let db = null;
