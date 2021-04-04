@@ -1,4 +1,21 @@
 .background {
-  height: 100%;
-  width: 100%;
+  display: grid;
+  background-image: url(/Brisbane.svg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+}
+.imgalbert {
+  grid-column: 2;
+  grid-row: 3;
+}
+.imgkookie {
+  grid-column: 3;
+  grid-row: 3;
+}
+.speechbubble {
+  grid-column: 2 /3;
+  grid-row: 2;
+  align-self: center;
 }
