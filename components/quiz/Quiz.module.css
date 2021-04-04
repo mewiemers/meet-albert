@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-family: "AlmondCream", sans-serif;
+  font-family: "Gabriola", sans-serif;
   display: grid;
   grid-template-columns: 1fr;
   background: var(--main-background-color);

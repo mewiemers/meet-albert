@@ -1,17 +1,17 @@
-import { useState } from "react";
 import styles from "./Input.module.css";
+import useLocalStorage from "../../hook/hook";
 
 export default function Input() {
-  const [name, setName] = useState("");
+  const [username, setUsername] = useLocalStorage("name", null);
 
   return (
     <>
       <input
-        value={name}
+        value={username}
         className={styles.input}
         type="text"
         placeholder="your name"
-        onChange={(event) => setName(event.target.value)}
+        onChange={(event) => setUsername(event.target.value)}
       ></input>
     </>
   );

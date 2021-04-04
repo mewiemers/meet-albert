@@ -19,12 +19,10 @@ export const RightButton = Template.bind({});
 RightButton.args = {
   label: "Right",
   color: "green",
-  isCorrect: true,
 };
 
 export const WrongButton = Template.bind({});
 WrongButton.args = {
   label: "Wrong",
   color: "red",
-  isCorrect: false,
 };

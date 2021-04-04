@@ -3,7 +3,8 @@
   height: 15rem;
   background-color: var(--main-background-color);
   border-radius: 2rem;
-  position: relative;
+  position: absolute;
+  z-index: "3";
 }
 .bubble::after {
   content: "";

@@ -1,9 +1,8 @@
 import styles from "./Quiz.module.css";
 import Quizbutton from "../quizbutton/Quizbutton";
-import { useState } from "react";
 
 export type QuizProps = {
-  _id?: string;
+  _id: string;
   question: string;
   answerOptions: Answer[];
 };
@@ -12,26 +11,11 @@ export type Answer = {
   isCorrect: boolean;
 };
 
-export type AnswerStatus = "pending" | "wrong" | "correct";
-
 function Quiz({ question, answerOptions }: QuizProps) {
-  const [guessStatus, setGuessStatus] = useState("");
-  const handleAnswerClick = (answerstatus: AnswerStatus) => {
-    if (answerstatus === "correct") {
-      setGuessStatus("AMAZING");
-    } else {
-      setGuessStatus("Hmmm,try again");
-    }
-  };
-
   const option = answerOptions.map((answer) => {
     return (
       <>
-        <Quizbutton
-          status={answer.isCorrect ? "correct" : "wrong"}
-          label={answer.answerText}
-          test={() => handleAnswerClick}
-        />
+        <Quizbutton color="blue" label={answer.answerText} />
       </>
     );
   });
@@ -41,8 +25,6 @@ function Quiz({ question, answerOptions }: QuizProps) {
       <h1 className={styles.headline}>QUIZ TIME</h1>
       <h2>{question}</h2>
       <div className={styles.btn}>{option}</div>
-      <div>{guessStatus}</div>
-      <div>this will be used later, here for the arrow </div>
     </div>
   );
 }
