@@ -4,14 +4,10 @@
 }
 
 @font-face {
-  font-family: "Gabriola";
-  src: url(/Gabriola.woff) format("woff");
-}
-@font-face {
   font-family: "FranklinGothic";
   src: url(/FranklinGothic.woff) format("woff");
 }
-
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
 :root {
   --main-background-color: #50c4b7;
   --secondary-color: #fff;
