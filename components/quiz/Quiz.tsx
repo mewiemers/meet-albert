@@ -1,6 +1,7 @@
 import styles from "./Quiz.module.css";
 import Quizbutton from "../quizbutton/Quizbutton";
 import { useState } from "react";
+import Link from "next/link";
 
 export type QuizProps = {
   _id?: string;
@@ -41,7 +42,9 @@ function Quiz({ question, answerOptions }: QuizProps) {
       <h2>{question}</h2>
       <div className={styles.btn}>{option}</div>
       <div>{guessStatus}</div>
-      <img className={styles.map} src="/backtomap.svg" />
+      <Link href={"/introduce"}>
+        <img className={styles.map} src="/backtomap.svg" />
+      </Link>
     </div>
   );
 }
