@@ -5,7 +5,7 @@ import Canvas from "../components/canvas/Canvas";
 function Introduce() {
   return (
     <>
-      <Button label="Brisbane" link={"/citypage/"} primary />
+      <Button label="GO!" link={"/citypage/"} primary />
       <Canvas />
     </>
   );

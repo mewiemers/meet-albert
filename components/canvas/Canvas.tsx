@@ -44,7 +44,7 @@ function Canvas() {
       <main className={styles.main}>
         <p className={styles.text}>
           Hello {name}! you can type on the button and navigate me to the blue
-          points or tap on Brisbane to start with the first city!
+          points or tap on <span>GO!</span> to start with the first city!
         </p>
 
         <canvas

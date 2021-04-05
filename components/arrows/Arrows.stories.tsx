@@ -12,9 +12,11 @@ const Template: Story<ArrowProps> = (args) => <Arrows {...args} />;
 export const BlackArrow = Template.bind({});
 BlackArrow.args = {
   backgroundColor: "var(--font-color)",
+  link: "#",
 };
 
 export const BrownArrow = Template.bind({});
 BrownArrow.args = {
   backgroundColor: "var(--link-color)",
+  link: "#",
 };

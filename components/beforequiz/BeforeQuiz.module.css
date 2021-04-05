@@ -10,10 +10,12 @@
 .imgalbert {
   grid-column: 2;
   grid-row: 4;
+  height: 8rem;
 }
 .imgkookie {
   grid-column: 3;
   grid-row: 5;
+  height: 8rem;
 }
 .speechbubble {
   grid-column: 2 /3;
@@ -24,9 +26,13 @@
   grid-column: 3;
   grid-row: 4;
   align-self: center;
+  height: 8rem;
 }
-.arrow {
-  grid-column: 4;
-  grid-row: 3;
-  background-color: black;
+
+.quiz {
+  grid-column: 4 /3;
+  grid-row: 4 /3;
+  align-self: center;
+  width: 10rem;
+  height: 10rem;
 }

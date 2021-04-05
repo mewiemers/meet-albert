@@ -9,5 +9,7 @@ export default {
 
 const Template = () => <KookieDetail />;
 
-export const Kookie = Template.bind({});
-// Primary.args = {};
+export const Kookiequestion = Template.bind({});
+Kookiequestion.args = {
+  link: "#",
+};
