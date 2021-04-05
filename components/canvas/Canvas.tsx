@@ -40,32 +40,27 @@ function Canvas() {
   }, [x, y]);
 
   return (
-    <div className={styles.containerMap}>
-      <main className={styles.main}>
-        <p className={styles.text}>
-          Hello {name}! you can type on the button and navigate me to the blue
-          points or tap on <span>GO!</span> to start with the first city!
-        </p>
+    <div>
+      <p className={styles.text}>
+        Hello {name}!<br /> You can type on the direction buttons and navigate
+        me to the blue points or tap on <span>GO!</span> to start with the first
+        city!
+        <br /> On small device scroll to the right side!
+      </p>
+      <canvas className={styles.backgroundCanvas} ref={canvasRef} z-index="1" />
 
-        <canvas
-          className={styles.backgroundCanvas}
-          ref={canvasRef}
-          z-index="1"
-        />
-
-        <div className={styles.btn}>
-          <button onClick={() => move("up")}>Up</button>
-          <button onClick={() => move("left")}>Left</button>
-          <button onClick={() => move("down")}>Down</button>
-          <button onClick={() => move("right")}>Right</button>
-        </div>
-        <div className={styles.img}>
-          <img src="/up.svg" ref={albertUpRef} alt="up" />
-          <img src="/left.svg" ref={albertLeftRef} alt="left" />
-          <img src="/right.svg" ref={albertRightRef} alt="right" />
-          <img src="/Albert.svg" ref={albertDownRef} alt="down" />
-        </div>
-      </main>
+      <div className={styles.btn}>
+        <button onClick={() => move("up")}>Up</button>
+        <button onClick={() => move("left")}>Left</button>
+        <button onClick={() => move("down")}>Down</button>
+        <button onClick={() => move("right")}>Right</button>
+      </div>
+      <div className={styles.img}>
+        <img src="/up.svg" ref={albertUpRef} alt="up" />
+        <img src="/left.svg" ref={albertLeftRef} alt="left" />
+        <img src="/right.svg" ref={albertRightRef} alt="right" />
+        <img src="/Albert.svg" ref={albertDownRef} alt="down" />
+      </div>
     </div>
   );
 }
