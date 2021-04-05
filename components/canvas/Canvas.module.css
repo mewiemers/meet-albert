@@ -1,11 +1,3 @@
-.containerMap {
-  box-sizing: border-box;
-}
-.main {
-  position: relative;
-  height: 100vh;
-}
-
 .backgroundCanvas {
   background-image: url(/australia-map.jpg);
   background-repeat: no-repeat;
@@ -20,13 +12,11 @@
 .text {
   z-index: 2;
   position: absolute;
-  top: 100px;
-  left: 1360px;
   text-align: center;
   font-size: 1.6rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #2537c7;
+  font-family: "Chilanka", cursive;
   font-weight: bold;
+  color: deeppink;
 }
 .btn {
   display: grid;
