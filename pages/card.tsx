@@ -30,7 +30,7 @@ function Card() {
   return (
     <>
       <div>{infocard}</div>
-      <Arrow backgroundColor={"var(--link-color)"} link={"#"} />
+      <Arrow backgroundColor={"var(--link-color)"} link={"goodbye"} />
     </>
   );
 }
