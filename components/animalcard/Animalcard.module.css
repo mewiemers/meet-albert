@@ -1,10 +1,5 @@
 .background {
   background-color: var(--main-background-color);
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
 }
 
 .headline {
@@ -12,12 +7,23 @@
   color: #707070;
   font-size: 3.75rem;
   text-align: center;
+  margin: 0;
+  padding: 1em;
 }
 .textbox {
   border: #707070 solid 2px;
   text-align: center;
-  width: 66%;
+  width: 97vw;
   line-height: 3rem;
-  font-size: 1.3rem;
+  font-size: 1em;
   border-radius: 40px;
+  padding: 2em;
+}
+.arrow {
+  position: relative;
+  left: 54%;
+}
+.img {
+  width: 90vw;
+  margin-left: 2em;
 }

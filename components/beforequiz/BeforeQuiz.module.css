@@ -1,38 +1,41 @@
 .background {
-  display: grid;
-  background-image: url(/natureland.jpg);
+  background-position: center center;
+  position: relative;
+  background-image: url(/naturescene.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
   width: 100vw;
   height: 100vh;
-  grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+  background-size: cover;
+  background-color: var(--main-background-color);
 }
+
 .imgalbert {
-  grid-column: 2;
-  grid-row: 4;
-  height: 8rem;
+  position: absolute;
+  bottom: 4%;
+  width: 8em;
+  left: 10em;
 }
 .imgkookie {
-  grid-column: 3;
-  grid-row: 5;
-  height: 8rem;
+  position: absolute;
+  width: 8em;
+  top: 73%;
+  left: 70%;
 }
 .speechbubble {
-  grid-column: 2 /3;
-  grid-row: 3;
-  align-self: center;
+  position: absolute;
+  top: 60%;
+  left: 24%;
 }
 .speechkookie {
-  grid-column: 3;
-  grid-row: 4;
-  align-self: center;
-  height: 8rem;
+  position: absolute;
+  top: 58%;
+  left: 68%;
+  width: 14em;
 }
 
 .quiz {
-  grid-column: 4 /3;
-  grid-row: 4 /3;
-  align-self: center;
-  width: 10rem;
-  height: 10rem;
+  position: absolute;
+  top: 43%;
+  left: 46%;
+  width: 8em;
 }

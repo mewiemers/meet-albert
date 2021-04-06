@@ -25,6 +25,17 @@ function Canvas() {
     const context = canvasRef.current.getContext("2d");
     context.canvas.height = window.innerHeight;
     context.canvas.width = window.innerWidth;
+
+    function handleResize() {
+      const canvas = document.querySelector("canvas");
+      canvas.height = window.innerHeight;
+      canvas.width = window.innerWidth;
+    }
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   useEffect(() => {
