@@ -31,7 +31,7 @@ function Quiz({ question, answerOptions }: QuizProps) {
         <Quizbutton
           status={answer.isCorrect ? "correct" : "wrong"}
           label={answer.answerText}
-          test={() => handleAnswerClick}
+          handleAnswer={handleAnswerClick}
         />
       </>
     );
@@ -39,9 +39,9 @@ function Quiz({ question, answerOptions }: QuizProps) {
   return (
     <div className={styles.App}>
       <h1 className={styles.headline}>QUIZ TIME</h1>
-      <h2>{question}</h2>
+      <h2 className={styles.subheadline}>{question}</h2>
       <div className={styles.btn}>{option}</div>
-      <div>{guessStatus}</div>
+      <div className={styles.output}>{guessStatus}</div>
       <Link href={"/introduce"}>
         <img className={styles.map} src="/backtomap.svg" />
       </Link>
