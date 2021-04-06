@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import AnimalCard from "../components/animalcard/Animalcard";
-import Arrow from "../components/arrows/Arrows";
 import { Animal } from "../utils/api";
 
 function Card() {
@@ -30,7 +29,6 @@ function Card() {
   return (
     <>
       <div>{infocard}</div>
-      <Arrow backgroundColor={"var(--link-color)"} link={"goodbye"} />
     </>
   );
 }

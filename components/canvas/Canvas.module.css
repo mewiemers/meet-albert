@@ -13,11 +13,11 @@
   z-index: 2;
   position: absolute;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 2em;
   font-family: "Chilanka", cursive;
   font-weight: bold;
   color: deeppink;
-  padding: 0 6rem 0 6rem;
+  padding: 1em;
   border: solid black 2px;
   background-color: white;
   margin: 2rem 7rem 0 2rem;
