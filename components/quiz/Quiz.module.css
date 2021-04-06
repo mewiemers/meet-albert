@@ -9,9 +9,13 @@
   height: 100vh;
 }
 
+.subheadline {
+  font-size: 2.6rem;
+}
+
 .headline {
   font-family: "Almond Cream", sans-serif;
-  font-size: 3em;
+  font-size: 4em;
 }
 .btn {
   display: grid;
@@ -21,4 +25,10 @@
 }
 .map {
   justify-self: flex-end;
+}
+.output {
+  font-size: 2.6rem;
+  color: purple;
+  font-weight: bold;
+  margin-top: 3rem;
 }

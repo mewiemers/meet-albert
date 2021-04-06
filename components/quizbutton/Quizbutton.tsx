@@ -4,19 +4,19 @@ import styles from "./Quizbutton.module.css";
 export type QuizButtonProps = {
   label?: string;
   status: "pending" | "wrong" | "correct" | "standard";
-  test?: (status: string) => void;
+  handleAnswer?: (status: string) => void;
 };
 
 export default function QuizButton({
   label,
   status,
-  test,
+  handleAnswer,
   ...props
 }: QuizButtonProps) {
   const [colorChange, setColorChange] = useState("pending");
   function handleClick(status: string) {
     setColorChange(status);
-    test(status);
+    handleAnswer(status);
   }
   return (
     <button
