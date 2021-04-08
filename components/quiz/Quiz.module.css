@@ -1,11 +1,12 @@
 .App {
-  text-align: center;
   font-family: "Chilanka", cursive;
-  display: grid;
-  grid-template-columns: 1fr;
   background: var(--main-background-color);
   color: var(--secondary-font-color);
-  width: 100vw;
+  padding: 4rem 0 10rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
   height: 100vh;
 }
 
@@ -19,9 +20,8 @@
 }
 .btn {
   display: grid;
-  grid-row-gap: 2em;
-  width: 50vw;
-  justify-self: center;
+  grid-row-gap: 6em;
+  text-align: center;
 }
 .map {
   justify-self: flex-end;

@@ -37,15 +37,17 @@ function Quiz({ question, answerOptions }: QuizProps) {
     );
   });
   return (
-    <div className={styles.App}>
-      <h1 className={styles.headline}>QUIZ TIME</h1>
-      <h2 className={styles.subheadline}>{question}</h2>
-      <div className={styles.btn}>{option}</div>
-      <div className={styles.output}>{guessStatus}</div>
-      <Link href={"/introduce"}>
-        <img className={styles.map} src="/backtomap.svg" />
-      </Link>
-    </div>
+    <main>
+      <div className={styles.App}>
+        <h1 className={styles.headline}>QUIZ TIME</h1>
+        <h2 className={styles.subheadline}>{question}</h2>
+        <div className={styles.btn}>{option}</div>
+        <div className={styles.output}>{guessStatus}</div>
+        <Link href={"/introduce"}>
+          <img className={styles.map} src="/backtomap.svg" />
+        </Link>
+      </div>
+    </main>
   );
 }
 export default Quiz;

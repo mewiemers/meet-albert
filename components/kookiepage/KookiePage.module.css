@@ -11,17 +11,17 @@
 .imgalbert {
   position: absolute;
   bottom: 4%;
-  width: 8em;
+  width: 10em;
 }
 .imgkookie {
   position: absolute;
-  width: 8em;
+  width: 10em;
   top: 73%;
   left: 70%;
 }
 .speechbubble {
   position: absolute;
-  width: 14em;
+  width: 20em;
   top: 66%;
   left: 7%;
   height: 19%;
@@ -29,7 +29,7 @@
 
 .speechkookie {
   position: relative;
-  top: 62%;
+  top: 59%;
   left: 64%;
-  width: 14em;
+  width: 19em;
 }

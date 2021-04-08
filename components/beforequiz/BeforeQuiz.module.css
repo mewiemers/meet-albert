@@ -13,11 +13,11 @@
   position: absolute;
   bottom: 4%;
   width: 8em;
-  left: 10em;
+  left: 25em;
 }
 .imgkookie {
   position: absolute;
-  width: 8em;
+  width: 10em;
   top: 73%;
   left: 70%;
 }
@@ -25,17 +25,18 @@
   position: absolute;
   top: 60%;
   left: 24%;
+  width: 26em;
 }
 .speechkookie {
   position: absolute;
   top: 58%;
   left: 68%;
-  width: 14em;
+  width: 21em;
 }
 
 .quiz {
   position: absolute;
-  top: 43%;
+  top: 30%;
   left: 46%;
-  width: 8em;
+  width: 20em;
 }

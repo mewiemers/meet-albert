@@ -1,5 +1,7 @@
 .background {
   background-color: var(--main-background-color);
+  overflow: hidden;
+  height: 100vh;
 }
 
 .headline {
@@ -13,17 +15,28 @@
 .textbox {
   border: #707070 solid 2px;
   text-align: center;
-  width: 97vw;
-  line-height: 3rem;
-  font-size: 1em;
+  line-height: 1.6em;
+  font-size: 1.8em;
   border-radius: 40px;
   padding: 2em;
+  -webkit-transform: translate(0%, -10%);
+  transform: translate(0%, -10%);
+  margin: 0 12em;
 }
 .arrow {
   position: relative;
-  left: 54%;
+  left: 40%;
+  width: 10vw;
+  bottom: 0%;
 }
 .img {
-  width: 90vw;
-  margin-left: 2em;
+  width: 35vw;
+  vertical-align: center;
+  transform: translate(93%, -14%);
+}
+
+.audio {
+  width: 20vw;
+  transform: translate(140%, -10%);
+  height: 10vh;
 }

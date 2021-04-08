@@ -4,23 +4,24 @@
 
 .headline {
   font-family: "AlmondCream", sans-serif;
-  color: #707070;
-  font-size: 3.75rem;
+  color: var(--secondary-font-color);
+  font-size: 9em;
   text-align: center;
+  margin-top: 0.4em;
 }
 
 .box {
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: "Franklin Gothic", sans-serif;
   border: #707070 solid 6px;
   border-radius: 10px;
   text-align: center;
-  line-height: 2.5rem;
-  margin-bottom: 4rem;
-  padding-bottom: 10rem;
+  padding: 1em;
+  width: 50vw;
+  margin-left: 18em;
 }
 
 .img {
-  max-width: 100%;
-  height: auto;
+  width: 73vh;
+  margin-left: 30em;
 }

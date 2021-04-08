@@ -1,10 +1,9 @@
 .input {
   background-color: #9dec5b;
   border-radius: 2em;
-  height: 2rem;
-  width: 10rem;
   border: none;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 5em;
   font-family: "AlmondCream", sans-serif;
+  margin-top: 1em;
 }
