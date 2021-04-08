@@ -1,6 +1,7 @@
 .backgroundCanvas {
   background-image: url(/australia-map.jpg);
   background-repeat: no-repeat;
+  background-color: var(--main-background-color);
 }
 .input {
   z-index: 2;
@@ -16,8 +17,8 @@
   font-size: 2em;
   font-family: "Chilanka", cursive;
   font-weight: bold;
-  color: deeppink;
-  padding: 1em;
+  color: #2537c7;
+  padding: 0.3em;
   border: solid black 2px;
   background-color: white;
   margin: 2rem 7rem 0 2rem;

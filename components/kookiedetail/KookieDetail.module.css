@@ -22,16 +22,16 @@
 
 .speechbubble {
   position: absolute;
-  width: 14em;
-  top: 66%;
-  left: 7%;
-  height: 19%;
+  width: 24em;
+  top: 61%;
+  left: 5%;
+  height: 13em;
 }
 .speechkookie {
   position: relative;
-  top: 62%;
+  top: 59%;
   left: 64%;
-  width: 14em;
+  width: 25em;
 }
 .arrow {
   position: relative;

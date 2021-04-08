@@ -18,4 +18,5 @@
   grid-column: 2 /3;
   grid-row: 2;
   align-self: center;
+  width: 30em;
 }
