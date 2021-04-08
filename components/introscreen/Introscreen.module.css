@@ -1,5 +1,6 @@
 .background {
   background: #50c4b7;
+  overflow: hidden;
 }
 
 .headline {
@@ -22,6 +23,6 @@
 }
 
 .img {
-  width: 73vh;
-  margin-left: 30em;
+  width: 50vh;
+  margin-left: 40em;
 }
