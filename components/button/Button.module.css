@@ -1,22 +1,17 @@
 .btn {
   border-radius: 2em;
-  font-size: 3.25rem;
+  font-size: 2.25rem;
   background-color: var(--button-color);
   border: none;
   font-family: "Chilanka", cursive;
-  width: 20rem;
   height: 5rem;
   box-shadow: 0.01px 7px 16px -2px rgba(0, 0, 0, 0.69),
     0.01px 7px 16px -2px rgba(0, 0, 0, 0.69);
   text-align: center;
-  margin-top: 1em;
 }
 .primary {
-  width: 5em;
+  width: 3em;
   z-index: 2;
-  position: absolute;
-  top: 300px;
-  left: 1550px;
   transition: 0.3s ease all;
   border: double 2px black;
 }
