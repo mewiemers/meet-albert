@@ -1,7 +1,8 @@
 import styles from "./Canvas.module.css";
-import { useEffect, useRef } from "react";
+import { MutableRefObject, useEffect, useRef } from "react";
 import moveAlbert from "../canvas/move";
 import useLocalStorage from "../../hook/hook";
+import Button from "../button/Button";
 
 function Canvas() {
   const albertDownRef = useRef(null);
@@ -42,7 +43,7 @@ function Canvas() {
     const context = canvasRef.current.getContext("2d");
     context.clearRect(0, 0, window.innerWidth, window.innerHeight);
 
-    let albertRef;
+    let albertRef: MutableRefObject<string>;
     if (isdirection === "up") albertRef = albertUpRef;
     if (isdirection === "left") albertRef = albertLeftRef;
     if (isdirection === "right") albertRef = albertRightRef;
@@ -57,6 +58,8 @@ function Canvas() {
         me to the blue points or tap on <span>GO!</span> to start with the first
         city!
         <br /> On small device scroll to the right side!
+        <br />
+        <Button label="GO!" link={"/citypage/"} primary />
       </p>
       <canvas className={styles.backgroundCanvas} ref={canvasRef} z-index="1" />
 

@@ -1,6 +1,6 @@
 .background {
   background-color: var(--main-background-color);
-  overflow: hidden;
+  overflow: auto;
   height: 100vh;
 }
 
