@@ -1,11 +1,11 @@
 @font-face {
   font-family: "AlmondCream";
-  src: url(/AlmondCream.woff) format("woff");
+  src: url(/fonts/AlmondCream.woff) format("woff");
 }
 
 @font-face {
   font-family: "FranklinGothic";
-  src: url(/FranklinGothic.woff) format("woff");
+  src: url(/fonts/FranklinGothic.woff) format("woff");
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");

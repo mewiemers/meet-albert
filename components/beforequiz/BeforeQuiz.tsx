@@ -10,13 +10,13 @@ function BeforeQuiz({ link }: KookieQuizProps) {
   return (
     <>
       <div className={styles.background}>
-        <img className={styles.speechbubble} src="/goodbyealbert.svg" />
-        <img className={styles.imgalbert} src="/Albert.svg" />
-        <img className={styles.speechkookie} src="/goodbykookie.svg" />
+        <img className={styles.speechbubble} src="/images/goodbyealbert.svg" />
+        <img className={styles.imgalbert} src="/images/Albert.svg" />
+        <img className={styles.speechkookie} src="/images/goodbykookie.svg" />
         <Link href={link}>
-          <img className={styles.quiz} src="/Quizarrow.svg" />
+          <img className={styles.quiz} src="/images/Quizarrow.svg" />
         </Link>
-        <img className={styles.imgkookie} src="/kookie.svg" />
+        <img className={styles.imgkookie} src="/images/kookie.svg" />
       </div>
     </>
   );

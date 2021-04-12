@@ -1,5 +1,5 @@
 .backgroundCanvas {
-  background-image: url(/australia-map.jpg);
+  background-image: url(/images/australia-map.jpg);
   background-repeat: no-repeat;
   background-color: var(--main-background-color);
 }

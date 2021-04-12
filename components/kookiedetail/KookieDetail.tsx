@@ -5,12 +5,12 @@ import Link from "next/link";
 function KookieDetail() {
   return (
     <div className={styles.background}>
-      <img className={styles.speechbubble} src="/questionalbert.svg" />
-      <img className={styles.imgalbert} src="/left.svg" />
-      <img className={styles.speechkookie} src="/infokookie.svg" />
-      <img className={styles.imgkookie} src="/kookie.svg" />
+      <img className={styles.speechbubble} src="/images/questionalbert.svg" />
+      <img className={styles.imgalbert} src="/images/left.svg" />
+      <img className={styles.speechkookie} src="/images/infokookie.svg" />
+      <img className={styles.imgkookie} src="/images/kookie.svg" />
       <Link href={"/card"}>
-        <img className={styles.arrow} src="/arrow-black.svg" />
+        <img className={styles.arrow} src="/images/arrow-black.svg" />
       </Link>
     </div>
   );

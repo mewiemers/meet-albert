@@ -15,7 +15,7 @@ function AnimalCard({ name, ImgSrc, description, audioFile }: AnimalPreview) {
       <p className={styles.textbox}>{description}</p>
       <audio className={styles.audio} controls src={audioFile}></audio>
       <Link href={"/goodbye"}>
-        <img className={styles.arrow} src="/brownarrow.svg" />
+        <img className={styles.arrow} src="/images/brownarrow.svg" />
       </Link>
     </div>
   );

@@ -1,6 +1,6 @@
 .background {
   display: grid;
-  background-image: url(/Brisbane.svg);
+  background-image: url(/images/Brisbane.svg);
   background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;
