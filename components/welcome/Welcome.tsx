@@ -7,7 +7,7 @@ function Logo() {
       <h1 className={styles.headline}>
         Meet
         <a href="/">
-          <img src="/logo-albert.svg" />
+          <img src="/images/logo-albert.svg" />
         </a>
         Albert
       </h1>

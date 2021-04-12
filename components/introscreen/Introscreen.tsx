@@ -20,7 +20,7 @@ function Introscreen() {
         <Button label="Traveling" link={"/login"} />
       </div>
 
-      <img className={styles.img} src="/australia-map.jpg" />
+      <img className={styles.img} src="/images/australia-map.jpg" />
     </div>
   );
 }

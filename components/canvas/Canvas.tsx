@@ -70,10 +70,10 @@ function Canvas() {
         <button onClick={() => move("right")}>Right</button>
       </div>
       <div className={styles.img}>
-        <img src="/up.svg" ref={albertUpRef} alt="up" />
-        <img src="/left.svg" ref={albertLeftRef} alt="left" />
-        <img src="/right.svg" ref={albertRightRef} alt="right" />
-        <img src="/Albert.svg" ref={albertDownRef} alt="down" />
+        <img src="/images/up.svg" ref={albertUpRef} alt="up" />
+        <img src="/images/left.svg" ref={albertLeftRef} alt="left" />
+        <img src="/images/right.svg" ref={albertRightRef} alt="right" />
+        <img src="/images/Albert.svg" ref={albertDownRef} alt="down" />
       </div>
     </div>
   );
