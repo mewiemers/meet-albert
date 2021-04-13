@@ -43,7 +43,7 @@ export async function connectDB(url: string, dbName: string) {
 }
 
 export function getCollection<T>(collectionName: string): Collection<T> {
-  return db.collection(collectionName);
+  return db.collection<T>(collectionName);
 }
 
 export async function infoList(collectionName: string) {
