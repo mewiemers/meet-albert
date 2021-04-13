@@ -1,4 +1,4 @@
-import { MongoClient } from "mongodb";
+import { Collection, Db, MongoClient } from "mongodb";
 import type { NextApiRequest, NextApiResponse } from "next";
 
 export type Animal = {
@@ -20,8 +20,8 @@ export type AnswerOption = {
   isCorrect: boolean;
 };
 
-let client = null;
-let db = null;
+let client: MongoClient = null;
+let db: Db = null;
 
 const url = process.env.MONGODB_URL;
 
@@ -31,7 +31,7 @@ export const withDatabase = (handler: Handler) => async (
   res: NextApiResponse
 ) => {
   await connectDB(url, "animalsinfo");
-  return await handler(req, res);
+  return handler(req, res);
 };
 
 export async function connectDB(url: string, dbName: string) {
@@ -42,8 +42,8 @@ export async function connectDB(url: string, dbName: string) {
   db = client.db(dbName);
 }
 
-export async function getCollection(collectionName: string) {
-  return await db.collection(collectionName);
+export function getCollection<T>(collectionName: string): Collection<T> {
+  return db.collection(collectionName);
 }
 
 export async function infoList(collectionName: string) {
