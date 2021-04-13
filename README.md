@@ -4,6 +4,8 @@
 
 > Learn english with the platypus "Albert"
 
+<img align="center" src="public/Melanie_Wiemers_Meet_Albert.gif"></img>
+
 This is my capstone project for the Neue Fische Web Development bootcamp I attended in spring of 2021.
 Meet Albert is a web app to learn the first English skills.
 In an educational game you visit different marked cities on the map with "Albert", the platypus.
