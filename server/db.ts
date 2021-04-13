@@ -34,7 +34,7 @@ export const withDatabase = (handler: Handler) => async (
   return await handler(req, res);
 };
 
-export async function connectDB(url, dbName) {
+export async function connectDB(url: string, dbName: string) {
   if (db) {
     return;
   }
@@ -42,15 +42,15 @@ export async function connectDB(url, dbName) {
   db = client.db(dbName);
 }
 
-export async function getCollection(collectionName) {
+export async function getCollection(collectionName: string) {
   return await db.collection(collectionName);
 }
 
-export async function infoList(collectionName) {
+export async function infoList(collectionName: string) {
   return await db.collection(collectionName).find().toArray();
 }
 
-export async function quizanswers(collectionName) {
+export async function quizanswers(collectionName: string) {
   return await db.collection(collectionName).find().toArray();
 }
 
