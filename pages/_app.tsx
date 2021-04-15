@@ -10,11 +10,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       <Head>
         <title>Meet Albert</title>
-        <link rel="icon" href="/favicon.ico" />
         <meta
           name="viewport"
-          content="width=device-width,initial-scale=1"
-        ></meta>
+          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
+        />
       </Head>
     </>
   );
