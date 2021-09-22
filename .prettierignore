@@ -13,3 +13,7 @@
 # production
 /build
 /storybook-static
+# pwa
+**/public/workbox-*.js*
+**/public/worker-*.js*
+**/public/sw.js*
